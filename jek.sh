@@ -1,5 +1,9 @@
 #!/bin/bash
 # bundle install
+
+echo "getting newest table ... "
+cp ~/web/iei_genetics/output/iusis_iei_table_2025.html ./assets/
+
 bundle exec jekyll serve &
 sleep 3
 
