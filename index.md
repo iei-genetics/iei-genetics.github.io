@@ -7,18 +7,48 @@ permalink: /
 ---
 
 <!-- [table]({% link docs/iei_table.md %}) -->
-# Inborn Errors of Immunity (IEI)
+# Diagnosing Immunodeficiency
 
-This page is dedicated to the cleaning and improvement of data about the genetics/diagnosis of primary immunodeficiencies. 
-We source this data from the International Union of Immunological Societies (IUIS) Inborn Errors of Immunity Committee (IEI) <https://iuis.org/committees/iei/> and add improvements.
-
-## [--> Use the table here](/assets/iusis_iei_table_2025.html)
+Explore our enhanced, searchable Inborn Errors of Immunity (IEI) diagnosis table - an integrated resource built on the latest IUIS classification that details phenotypes, variant classifications and more - to support clinical review and research into primary immunodeficiencies (PID). This curated tool links genetic data with OMIM and HPO annotations and is designed to help clinicians and researchers navigate the expanding landscape of immunodeficiency diagnosis. 
+  
+## [**Explore the Enhanced IEI Table »**](/assets/iusis_iei_table_2025.html)
 
 ## Content
 
 * The main publication can be found at: (pre-print stage)
-* Download table:
-* Webpage table:
+* Download table TSV: [Download clean_iusis_iei_table_2025.tsv](https://raw.githubusercontent.com/DylanLawless/iei_genetics/main/output/iusis_iei_table_2025.tsv)
+* Online table: [Enhanced IEI Table](/assets/iusis_iei_table_2025.html)
+
+
+## Knowledge Base Linked Resources
+
+### OMIM - Online Mendelian Inheritance in Man
+
+An online catalogue of human genes and genetic disorders, OMIM provides comprehensive information on gene-disease relationships, genetic mechanisms, and phenotype descriptions. Curated by the McKusick-Nathans Institute of Genetic Medicine at Johns Hopkins University, this resource is essential for clinicians, researchers, and geneticists.
+An Online Catalog of Human Genes and Genetic Disorders. Online Mendelian Inheritance in Man, OMIM. McKusick-Nathans Institute of Genetic Medicine, Johns Hopkins University (Baltimore, MD) [https://omim.org/](https://omim.org/).
+
+### AlphaFold and AlphaMissense
+
+We link to access detailed data for your gene - including information on gene structure, function with [AlphaFold](https://www.alphafold.ebi.ac.uk) and [AlphaMissense](https://alphamissense.hegelab.org) pathogenicity predictions. 
+This page provides a view:
+- **Gene Details:** Basic gene data and annotations.
+- **Protein Structure:** 3D coordinates, per-residue confidence (pLDDT) and Predicted Aligned Error (PAE) for assessing domain packing.
+- **Function:** Annotations on protein function and regions of interest.
+- **AlphaMissense Predictions:** AI-driven scoring categorising missense mutations as likely pathogenic, likely benign or ambiguous, helping to highlight potentially disease-causing variants.
+
+**Citations:**
+
+- Jumper, J., Evans, R., Pritzel, A. et al. *Highly accurate protein structure prediction with AlphaFold.* Nature 596, 583–589 (2021). [https://doi.org/10.1038/s41586-021-03819-2](https://doi.org/10.1038/s41586-021-03819-2)
+- Jun Cheng et al. *Accurate proteome-wide missense variant effect prediction with AlphaMissense.* Science 381, eadg7492 (2023). [https://doi.org/10.1126/science.adg7492](https://doi.org/10.1126/science.adg7492)
+
+
+### ClinVar: A Public Archive of Human Variation
+
+ClinVar provides detailed classifications (e.g., "Pathogenic," "Likely pathogenic," "Benign," etc.) along with supporting evidence and review status. It aggregates submissions from multiple sources to present consensus and conflicting interpretations, maps variants to reference sequences per HGVS standards, and collaborates with expert panels like ClinGen for continual re-evaluation. Data is accessible via the website, FTP, and APIs for diverse clinical and research applications.
+
+**Citations:**
+
+- Landrum MJ, Chitipiralla S, Kaur K, et al. *ClinVar: updates to support classifications of both germline and somatic variants.* Nucleic Acids Res. 2024 Nov 23:gkae1090. doi: [10.1093/nar/gkae1090](https://doi.org/10.1093/nar/gkae1090).
 
 ## Cleaning process
 
