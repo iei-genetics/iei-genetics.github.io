@@ -2,15 +2,20 @@
 title: Home
 layout: home
 nav_order: 1
-description: "Just the Docs is a responsive Jekyll theme with built-in search that is easily customizable and hosted on GitHub Pages."
+description: "Diagnosing Immunodeficiency with genomic data."
 permalink: /
 ---
+
+[![IEI Genetics Logo](/assets/images/iei_genetics.png)](/assets/iusis_iei_table_2025.html)
+
 
 <!-- [table]({% link docs/iei_table.md %}) -->
 # Diagnosing Immunodeficiency
 
-Explore our enhanced, searchable Inborn Errors of Immunity (IEI) diagnosis table - an integrated resource built on the latest IUIS classification that details phenotypes, variant classifications and more - to support clinical review and research into primary immunodeficiencies (PID). This curated tool links genetic data with OMIM and HPO annotations and is designed to help clinicians and researchers navigate the expanding landscape of immunodeficiency diagnosis. 
-  
+Explore the enhanced, searchable Inborn Errors of Immunity (IEI) diagnosis table. 
+Built on the latest IUIS classification, this resource details phenotypes, variant classifications, and more to support clinical review and research into primary immunodeficiencies (PID).
+Our knowledge base integrates genetic data from OMIM, HPO, ClinVar, gnomAD, and other leading sources, designed to help clinicians and researchers navigate the expanding landscape of immunodeficiency diagnosis.
+
 ## [**Explore the Enhanced IEI Table »**](/assets/iusis_iei_table_2025.html)
 
 ## Content
@@ -20,71 +25,19 @@ Explore our enhanced, searchable Inborn Errors of Immunity (IEI) diagnosis table
 * Online table: [Enhanced IEI Table](/assets/iusis_iei_table_2025.html)
 
 
-## Knowledge Base Linked Resources
+## Developement pages
 
-### OMIM - Online Mendelian Inheritance in Man
-
-An online catalogue of human genes and genetic disorders, OMIM provides comprehensive information on gene-disease relationships, genetic mechanisms, and phenotype descriptions. Curated by the McKusick-Nathans Institute of Genetic Medicine at Johns Hopkins University, this resource is essential for clinicians, researchers, and geneticists.
-An Online Catalog of Human Genes and Genetic Disorders. Online Mendelian Inheritance in Man, OMIM. McKusick-Nathans Institute of Genetic Medicine, Johns Hopkins University (Baltimore, MD) [https://omim.org/](https://omim.org/).
-
-### AlphaFold and AlphaMissense
-
-We link to access detailed data for your gene - including information on gene structure, function with [AlphaFold](https://www.alphafold.ebi.ac.uk) and [AlphaMissense](https://alphamissense.hegelab.org) pathogenicity predictions. 
-This page provides a view:
-- **Gene Details:** Basic gene data and annotations.
-- **Protein Structure:** 3D coordinates, per-residue confidence (pLDDT) and Predicted Aligned Error (PAE) for assessing domain packing.
-- **Function:** Annotations on protein function and regions of interest.
-- **AlphaMissense Predictions:** AI-driven scoring categorising missense mutations as likely pathogenic, likely benign or ambiguous, helping to highlight potentially disease-causing variants.
-
-**Citations:**
-
-- Jumper, J., Evans, R., Pritzel, A. et al. *Highly accurate protein structure prediction with AlphaFold.* Nature 596, 583–589 (2021). [https://doi.org/10.1038/s41586-021-03819-2](https://doi.org/10.1038/s41586-021-03819-2)
-- Jun Cheng et al. *Accurate proteome-wide missense variant effect prediction with AlphaMissense.* Science 381, eadg7492 (2023). [https://doi.org/10.1126/science.adg7492](https://doi.org/10.1126/science.adg7492)
-
-
-### ClinVar: A Public Archive of Human Variation
-
-ClinVar provides detailed classifications (e.g., "Pathogenic," "Likely pathogenic," "Benign," etc.) along with supporting evidence and review status. It aggregates submissions from multiple sources to present consensus and conflicting interpretations, maps variants to reference sequences per HGVS standards, and collaborates with expert panels like ClinGen for continual re-evaluation. Data is accessible via the website, FTP, and APIs for diverse clinical and research applications.
-
-**Citations:**
-
-- Landrum MJ, Chitipiralla S, Kaur K, et al. *ClinVar: updates to support classifications of both germline and somatic variants.* Nucleic Acids Res. 2024 Nov 23:gkae1090. doi: [10.1093/nar/gkae1090](https://doi.org/10.1093/nar/gkae1090).
-
-## Cleaning process
-
-We transform the raw IUIS IEI data into a searchable, human- and machine-readable table with enhanced functionality. Our cleaning process integrates links to OMIM, expanded HPO terms, and standardises gene names to HUGO symbols. Specifically, we:
-
-- Measure the distribution of data across major categories and subcategories to ensure even representation for robust classification (see Figure `plot_patch2.pdf`).
-- Remove extraneous whitespace and ambiguous characters to improve clarity.
-- Merge multiple HPO columns into a single “HPO combined” field and expand these into individual HPO terms with corresponding definitions.
-- Standardise gene names to single HUGO symbols (e.g. converting “CD40 (TNFRSF5)” to “CD40”) and split entries with multiple genes into separate rows.
-- Streamline inheritance classifications for consistency.
-- Recategorise free-text descriptions of cell and immunoglobulin counts into concise, uniform labels (e.g. “normal”, “low”, “borderline”, “defective”), with before-and-after label distributions illustrated in Figures `plot_patch1.pdf` and `plot_patch3.pdf`.
-
-This comprehensive cleaning ensures the final IEI table is easy to navigate, supports advanced queries, and reliably links to external resources.
-
-## Sources
-
-### Latest version
-
-* Latest publication 2025:
-    - "Human inborn errors of immunity: 2024 Update on the classification from the International Union of Immunological Societies Expert Committee":  
-      <https://wp-iuis.s3.eu-west-1.amazonaws.com/app/uploads/2025/01/08170257/IEI-Final-Update-of-2024-Report-Jan-2025.pdf>
-
-### Older versions
-
-* The 2022 edition can be found here:
-    - <https://link.springer.com/article/10.1007/s10875-022-01289-3#data-availability>  
-      Tangye, S.G., Al-Herz, W., Bousfiha, A. et al. Human Inborn Errors of Immunity: 2022 Update on the Classification from the International Union of Immunological Societies Expert Committee. *J Clin Immunol* (2022). https://doi.org/10.1007/s10875-022-01289-3
-    - The direct download link for Supplementary file2 (XLSX 93 kb):  
-      <https://static-content.springer.com/esm/art%3A10.1007%2Fs10875-022-01289-3/MediaObjects/10875_2022_1289_MOESM2_ESM.xlsx>.
-* The 2020 edition can be found here:
-    - <https://iuis.org/committees/iei/>
-    - 2020 download link:  
-      [Updated IEI classification table (December, 2019)](https://wp-iuis.s3.eu-west-1.amazonaws.com/app/uploads/2019/12/20113228/IUIS-IEI-list-for-web-site-December-2019-003.xlsx).
+<ul>
+  {% assign docs = site.pages | sort: 'nav_order' %}
+  {% for page in docs %}
+    {% if page.nav_order and page.layout == "default" %}
+      <li><a href="{{ page.url }}">{{ page.title }}</a></li>
+    {% endif %}
+  {% endfor %}
+</ul>
 
 ## License
 
-This site is distributed by an [MIT license](https://github.com/just-the-docs/just-the-docs/tree/main/LICENSE.txt).
+This site is distributed by an [MIT license](https://github.com/iei-genetics/iei-genetics.github.io/blob/master/LICENSE.txt).
 
 
