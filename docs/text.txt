@@ -1,0 +1,19 @@
+IEI: inborn errors of immunity  
+IUIS: International Union of Immunological Societies  
+FBC: full blood count  
+IgG: immunoglobulin G  
+IgM: immunoglobulin M  
+IgA: immunoglobulin A  
+IgE: immunoglobulin E  
+SCID: severe combined immunodeficiency  
+HLH: hemophagocytic lymphohistiocytosis  
+DNT: double negative T-cells  
+NBT: nitroblue tetrazolium  
+DHR: dihydrorhodamine  
+WES: whole-exome sequencing  
+WGS: whole-genome sequencing  
+CGD: chronic granulomatous disease  
+CNVs: copy number variants  
+CGH: comparative genomic hybridization  
+MLPA: multiplex ligation-dependent probe amplification  
+VUS: variants of unknown significance

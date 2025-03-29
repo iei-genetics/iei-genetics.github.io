@@ -20,118 +20,125 @@
     
     "relUrl": "/docs/data_cleaning/#knowledge-base"
   },"3": {
+    "doc": "Definitions",
+    "title": "Definitions",
+    "content": "Last update: 20250329 . All data is available in the downloadable table including those marked as hidden. Major category . | Description: A high-level classification that groups genes based on their overall role in immune function or disease. | Notes: Uses a custom mapping (major_map) to convert source categories into standardised group names. | . Subcategory . | Description: A more detailed classification within the major category, providing finer granularity about the gene’s role in immunity or disease. | . Disease . | Description: Indicates the type or classification of disease associated with the gene, reflecting the clinical context. | . Genetic defect . | Description: Identifies the gene or specific genetic variant responsible for the condition. | Interaction: Typically links to external databases (e.g. ClinVar, OMIM) for more detailed information. | . Inheritance . | Description: The mode of inheritance for the condition associated with the gene. | Possible Values: . | AD: Autosomal Dominant | AR: Autosomal Recessive | XL / XLR: X-linked (Recessive) | AD/AR: Combination of autosomal dominant and recessive patterns | Sporadic: Non-familial or toxin-induced cases | . | Visual Cues: Displayed with colour coding to distinguish between different modes. | . ICD9 . | Description: International Classification of Diseases, Ninth Revision code. | . ICD10 . | Description: International Classification of Diseases, Tenth Revision code. | . OMIM ID . | Description: The Online Mendelian Inheritance in Man identifier, providing access to detailed genetic disorder information. | . HPO IDs . | Description: Combined Human Phenotype Ontology identifiers relevant to the gene. | . HPO term . | Description: Specific Human Phenotype Ontology term describing a clinical feature. | . Associated features . | Description: Other clinical or phenotypic features associated with the disease. | . Uniprot . | Description: The UniProt accession ID for the gene’s protein, with a link to protein structure and function data (e.g. from AlphaFold or Alpha Missense). | . AlphaFold_URL (hidden) . | Description: A URL linking to the AlphaFold database entry. This provides access to variant and protein structure predictions for the gene. | . score_positive_total . | Description: The overall gene score computed from ClinVar variant reports. | Calculation: Sums the scores from variants considered pathogenic or likely pathogenic (ignoring incidental benign variants). | Interpretation: A higher score indicates a greater burden of pathogenic variants. | . probabilities . | Description: A sparkline boxplot summarising the distribution of the –log10(prior probability) for pathogenic variants for each gene. See the Variant Risk Estimate for detailed calculations. | Visualisation: Uses the pre-calculated minimum, first quartile, median, third quartile, and maximum values to provide a compact view of the probability distribution. | Usage: Helps assess how common a candidate pathogenic variant might be in patients. | . VariantCounts.VRE . | Description: A visual summary of ClinVar single nucleotide variant (SNV) classifications for the gene. See the Variant Risk Estimate for detailed calculations. | Visualisation: Displayed as a sparkline bar chart with: . | Red: Variants with score 5 (Pathogenic) | Orange: Variants with score 2-4 (Likely pathogenic) | Light blue: Variants with score 1-2 (Uncertain/conflicting) | Dark blue: Variants with score 0 (Benign) | . | Interaction: Clicking the chart links to a ClinVar search for more details. | . VariantCounts.ClnVar . | Description: A composite visual summary of all ClinVar variant reports for the gene. This data is the “raw” version directly from ClinVar which contains many overlapping descriptions for single variants, transcripts, or genes. | Visualisation: Displayed as a sparkline bar chart with: . | Red: Variants with score 5 (Pathogenic) | Orange: Variants with score 3-4 (Likely pathogenic) | Light blue: Variants with score 1-2 (Uncertain/conflicting) | Dark blue: Variants with score 0 (Benign) | . | Interaction: Clicking the chart links to a ClinVar search for the gene. | . B cell . | Description: Status of B cell counts (e.g. normal, low, decreased, immature). | . T cell . | Description: Status of T cell counts (e.g. low, normal, high, defective). | . Ig . | Description: Immunoglobulin (Ig) levels or status. | . Neutrophil . | Description: Neutrophil count status. | . Inheritance detail . | Description: Further detailed description of the mode of inheritance. | . Major_category_original (hidden) . | Description: The original category label as provided in the source data before any recoding or mapping. | . GOF/DN details . | Description: Details on gain-of-function or dominant-negative effects observed for the gene, as per the orginal IUIS IEI source. | . T cell details . | Description: Extra details regarding T cell abnormalities, as per the orginal IUIS IEI source. | . B cell details . | Description: Extra details regarding B cell abnormalities, as per the orginal IUIS IEI source. | . Ig details . | Description: Additional information regarding immunoglobulin levels, as per the orginal IUIS IEI source. | . Neutrophil details . | Description: Additional details regarding neutrophil counts, as per the orginal IUIS IEI source. | . Other affected cells . | Description: Other immune or non-immune cells that may be impacted, as per the orginal IUIS IEI source. | . score5.ClnVar (hidden) . | Description: Count of ClinVar variant reports with a score of 5 (Pathogenic). | . score4.ClnVar (hidden) . | Description: Count of ClinVar variant reports with a score of 3-4 (Likely pathogenic). | . score2.ClnVar (hidden) . | Description: Count of ClinVar variant reports with a score of 1-2 (typically representing uncertain or conflicting classifications). | . score0.ClnVar (hidden) . | Description: Count of ClinVar variant reports with a score of 0 (representing benign variants with scores in the range -5 to -1). | . score5.VRE (hidden) . | Description: Count of SNVs (single nucleotide variants) with a score of 5 (Pathogenic) as per the Variant Risk Estimation. | . score4.VRE (hidden) . | Description: Count of SNVs with a score of 2-4 (Likely pathogenic) as per the Variant Risk Estimation. | . score2.VRE (hidden) . | Description: Count of SNVs with a score of 1-2 (Uncertain or conflicting) as per the Variant Risk Estimation. | . score0.VRE (hidden) . | Description: Count of SNVs with a score of 0 (Benign) as per the Variant Risk Estimation. | . min_prob (hidden) . | Description: The minimum prior probability (–log10) observed for the gene. | . median_prob (hidden) . | Description: The median prior probability (–log10) observed for the gene. | . max_prob (hidden) . | Description: The maximum prior probability (–log10) observed for the gene. | . ",
+    "url": "/docs/definitions/",
+    
+    "relUrl": "/docs/definitions/"
+  },"4": {
     "doc": "Home",
     "title": "Diagnosing Immunodeficiency",
     "content": "Explore the enhanced, searchable Inborn Errors of Immunity (IEI) diagnosis table. Built on the latest IUIS classification, this resource details phenotypes, variant classifications, and more to support clinical review and research into primary immunodeficiencies (PID). Our knowledge base integrates genetic data from OMIM, HPO, ClinVar, gnomAD, and other leading sources, designed to help clinicians and researchers navigate the expanding landscape of immunodeficiency diagnosis. ",
     "url": "/#diagnosing-immunodeficiency",
     
     "relUrl": "/#diagnosing-immunodeficiency"
-  },"4": {
+  },"5": {
     "doc": "Home",
     "title": "Explore the Enhanced IEI Table »",
     "content": " ",
     "url": "/#explore-the-enhanced-iei-table-",
     
     "relUrl": "/#explore-the-enhanced-iei-table-"
-  },"5": {
+  },"6": {
     "doc": "Home",
     "title": "Content",
     "content": ". | The main publication can be found at: (pre-print stage) | Download table TSV: Download clean_iusis_iei_table_2025.tsv | Online table: Enhanced IEI Table | . ",
     "url": "/#content",
     
     "relUrl": "/#content"
-  },"6": {
+  },"7": {
     "doc": "Home",
     "title": "Developement pages",
-    "content": ". | Data cleaning | IUIS IEI data source | User experience | Knowledge Base | . ",
+    "content": ". | Data cleaning | Definitions | IUIS IEI data source | User experience | Knowledge Base | . ",
     "url": "/#developement-pages",
     
     "relUrl": "/#developement-pages"
-  },"7": {
+  },"8": {
     "doc": "Home",
     "title": "License",
     "content": "This site is distributed by an MIT license. ",
     "url": "/#license",
     
     "relUrl": "/#license"
-  },"8": {
+  },"9": {
     "doc": "Home",
     "title": "Home",
     "content": ". ",
     "url": "/",
     
     "relUrl": "/"
-  },"9": {
+  },"10": {
     "doc": "IUIS IEI data source",
     "title": "IUIS IEI data source",
     "content": "Last update: 20250329 . ",
     "url": "/docs/iuis_iei_datasource/",
     
     "relUrl": "/docs/iuis_iei_datasource/"
-  },"10": {
+  },"11": {
     "doc": "IUIS IEI data source",
     "title": "Latest version",
     "content": ". | Latest publication 2025: . | “Human inborn errors of immunity: 2024 Update on the classification from the International Union of Immunological Societies Expert Committee”: https://wp-iuis.s3.eu-west-1.amazonaws.com/app/uploads/2025/01/08170257/IEI-Final-Update-of-2024-Report-Jan-2025.pdf | . | . ",
     "url": "/docs/iuis_iei_datasource/#latest-version",
     
     "relUrl": "/docs/iuis_iei_datasource/#latest-version"
-  },"11": {
+  },"12": {
     "doc": "IUIS IEI data source",
     "title": "Older versions",
     "content": ". | The 2022 edition can be found here: . | https://link.springer.com/article/10.1007/s10875-022-01289-3#data-availability Tangye, S.G., Al-Herz, W., Bousfiha, A. et al. Human Inborn Errors of Immunity: 2022 Update on the Classification from the International Union of Immunological Societies Expert Committee. J Clin Immunol (2022). https://doi.org/10.1007/s10875-022-01289-3 | The direct download link for Supplementary file2 (XLSX 93 kb): https://static-content.springer.com/esm/art%3A10.1007%2Fs10875-022-01289-3/MediaObjects/10875_2022_1289_MOESM2_ESM.xlsx. | . | The 2020 edition can be found here: . | https://iuis.org/committees/iei/ | 2020 download link: Updated IEI classification table (December, 2019). | . | . ",
     "url": "/docs/iuis_iei_datasource/#older-versions",
     
     "relUrl": "/docs/iuis_iei_datasource/#older-versions"
-  },"12": {
+  },"13": {
     "doc": "Knowledge Base",
     "title": "Knowledge Base Linked Resources",
     "content": " ",
     "url": "/docs/knowledge_base/#knowledge-base-linked-resources",
     
     "relUrl": "/docs/knowledge_base/#knowledge-base-linked-resources"
-  },"13": {
+  },"14": {
     "doc": "Knowledge Base",
     "title": "GnomAD",
     "content": "GnomAD is a large-scale resource that aggregates and harmonises sequencing data from diverse cohorts to provide a comprehensive view of human genetic variation. We used the v4 dataset which comprises genomics data from 807,162 individuals. Beyond its extensive catalogue of variant calls, including over 786 million single nucleotide variants and 122 million InDels, the database offers detailed annotations that support analyses of population-specific allele frequencies. Citations: . | Karczewski KJ, Francioli LC, Tiao G, et al. The mutational constraint spectrum quantified from variation in 141,456 humans. Nature. 2020;581(7809):434-443. doi:10.1038/s41586-020-2308-7 | . ",
     "url": "/docs/knowledge_base/#gnomad",
     
     "relUrl": "/docs/knowledge_base/#gnomad"
-  },"14": {
+  },"15": {
     "doc": "Knowledge Base",
     "title": "OMIM - Online Mendelian Inheritance in Man",
     "content": "An online catalogue of human genes and genetic disorders, OMIM provides comprehensive information on gene-disease relationships, genetic mechanisms, and phenotype descriptions. Curated by the McKusick-Nathans Institute of Genetic Medicine at Johns Hopkins University, this resource is essential for clinicians, researchers, and geneticists. An Online Catalog of Human Genes and Genetic Disorders. Online Mendelian Inheritance in Man, OMIM. McKusick-Nathans Institute of Genetic Medicine, Johns Hopkins University (Baltimore, MD) https://omim.org/. ",
     "url": "/docs/knowledge_base/#omim---online-mendelian-inheritance-in-man",
     
     "relUrl": "/docs/knowledge_base/#omim---online-mendelian-inheritance-in-man"
-  },"15": {
+  },"16": {
     "doc": "Knowledge Base",
     "title": "AlphaFold and AlphaMissense",
     "content": "We link to access detailed data for your gene - including information on gene structure, function with AlphaFold and AlphaMissense pathogenicity predictions. This page provides a view: . | Gene Details: Basic gene data and annotations. | Protein Structure: 3D coordinates, per-residue confidence (pLDDT) and Predicted Aligned Error (PAE) for assessing domain packing. | Function: Annotations on protein function and regions of interest. | AlphaMissense Predictions: AI-driven scoring categorising missense mutations as likely pathogenic, likely benign or ambiguous, helping to highlight potentially disease-causing variants. | . Citations: . | Jumper, J., Evans, R., Pritzel, A. et al. Highly accurate protein structure prediction with AlphaFold. Nature 596, 583–589 (2021). https://doi.org/10.1038/s41586-021-03819-2 | Jun Cheng et al. Accurate proteome-wide missense variant effect prediction with AlphaMissense. Science 381, eadg7492 (2023). https://doi.org/10.1126/science.adg7492 | . ",
     "url": "/docs/knowledge_base/#alphafold-and-alphamissense",
     
     "relUrl": "/docs/knowledge_base/#alphafold-and-alphamissense"
-  },"16": {
+  },"17": {
     "doc": "Knowledge Base",
     "title": "ClinVar: A Public Archive of Human Variation",
     "content": "ClinVar provides detailed classifications (e.g., “Pathogenic,” “Likely pathogenic,” “Benign,” etc.) along with supporting evidence and review status. It aggregates submissions from multiple sources to present consensus and conflicting interpretations, maps variants to reference sequences per HGVS standards, and collaborates with expert panels like ClinGen for continual re-evaluation. Data is accessible via the website, FTP, and APIs for diverse clinical and research applications. Citations: . | Landrum MJ, Chitipiralla S, Kaur K, et al. ClinVar: updates to support classifications of both germline and somatic variants. Nucleic Acids Res. 2024 Nov 23:gkae1090. doi: 10.1093/nar/gkae1090. | . ",
     "url": "/docs/knowledge_base/#clinvar-a-public-archive-of-human-variation",
     
     "relUrl": "/docs/knowledge_base/#clinvar-a-public-archive-of-human-variation"
-  },"17": {
+  },"18": {
     "doc": "Knowledge Base",
     "title": "dbNSFP",
     "content": "For the research and testing phase we also used dbNSFP, a comprehensive database designed for the functional prediction and annotation of all potential non-synonymous single-nucleotide variants (nsSNVs) and splicing-site SNVs in human protein-coding genes. It includes over 120 million variant entries and aggregates prediction scores from 33 different sources and allele frequencies from major population datasets. Citations: . | Xiaoming Liu, Chang Li, Chengcheng Mou, Yibo Dong, and Yicheng Tu. dbNSFP v4: a comprehensive database of transcript-specific functional pre- dictions and annotations for human nonsynonymous and splice-site SNVs. Genome Medicine, 12(1):103, December 2020. ISSN 1756-994X. doi:10.1186/s13073-020-00803-9 | . ",
     "url": "/docs/knowledge_base/#dbnsfp",
     
     "relUrl": "/docs/knowledge_base/#dbnsfp"
-  },"18": {
+  },"19": {
     "doc": "Knowledge Base",
     "title": "Knowledge Base",
     "content": " ",
     "url": "/docs/knowledge_base/",
     
     "relUrl": "/docs/knowledge_base/"
-  },"19": {
+  },"20": {
     "doc": "User experience",
     "title": "User experience",
     "content": "Last update: 20250329 . Making a user-friendly experience is challenging when working with large genomic datasets. To reduce the browser’s rendering load, we pre-calculate summary statistics server-side. For example, we use score mapping to convert clinical significance terms into numeric scores. This process distils complex information into the most critical insights, such as the total count of pathogenicity-related classifications, while filtering out incidental benign variants that may not be immediately useful to the user. However, we recognise that benign incidental variants can also inform the prior odds of false positives. To address this, we summarise both pathogenic and benign classifications and combine multiple visual summaries, like stacked bar charts and classification counts, into a responsive layout that provides quick insights without compromising performance. Another key metric is the “Prior probability of observing pathogenic”, which displays the -log10 probability of encountering a patient with candidate causal pathogenic variants matching the disease mode of inheritance. This simple plot might require hundreds of probabilites for each gene. Therefore, we calculate key quantiles (min, Q1, median, Q3, max) of the variant probability distribution for each gene, merging these values into our main dataframe. This approach enables each row of our responsive table to render a compact sparkline box plot that summarises the distribution without burdening the browser with processing large datasets in real time. Creating URLs that link to source databases is a feature that empowers users to easily access detailed external information. We achieve this by dynamically generating hyperlinks within our reactable columns using functions like sprintf and htmltools tags. For example, when rendering the ClinVar variant counts, the code constructs a URL that directs the user to the ClinVar website by embedding the relevant gene identifier into the query parameters. Similar approaches are used for other databases such as OMIM and AlphaFold, where the displayed value is turned into a clickable link that leads directly to the source entry. This method ensures that the links are always in sync with the underlying data, providing users with immediate access to comprehensive, authoritative information while keeping the table interface compact and user-friendly. ",
